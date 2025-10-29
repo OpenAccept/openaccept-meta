@@ -1,0 +1,86 @@
+{
+  "name": "SIGGRAPH",
+  "full_name": "ACM SIGGRAPH Conference (International Conference on Computer Graphics and Interactive Techniques)",
+  "website": "https://www.siggraph.org/siggraph-events/conferences/",
+  "dblp": "https://dblp.org/db/conf/siggraph/index.html",
+  "yearly_data": [
+    {
+      "year": 2024,
+      "accepted": 134,
+      "submitted": 652
+    },
+    {
+      "year": 2023,
+      "accepted": 111,
+      "submitted": 371
+    },
+    {
+      "year": 2022,
+      "accepted": 78,
+      "submitted": 353
+    },
+    {
+      "year": 2021,
+      "accepted": 149,
+      "submitted": 449
+    },
+    {
+      "year": 2020,
+      "accepted": 124,
+      "submitted": 443
+    },
+    {
+      "year": 2019,
+      "accepted": 111,
+      "submitted": 385
+    },
+    {
+      "year": 2018,
+      "accepted": 128,
+      "submitted": 464
+    },
+    {
+      "year": 2017,
+      "accepted": 126,
+      "submitted": 439
+    },
+    {
+      "year": 2016,
+      "accepted": 119,
+      "submitted": 467
+    },
+    {
+      "year": 2015,
+      "accepted": 118,
+      "submitted": 462
+    },
+    {
+      "year": 2014,
+      "accepted": 127,
+      "submitted": 505
+    },
+    {
+      "year": 2013,
+      "accepted": 115,
+      "submitted": 480
+    }
+  ],
+  "second_track": "Journal-only Track",
+  "second_track_yearly_data": [
+    {
+      "year": 2024,
+      "accepted": 118,
+      "submitted": 192
+    },
+    {
+      "year": 2023,
+      "accepted": 103,
+      "submitted": 240
+    },
+    {
+      "year": 2022,
+      "accepted": 116,
+      "submitted": 257
+    }
+  ]
+}
