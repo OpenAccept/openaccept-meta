@@ -5,6 +5,11 @@
   "dblp": "https://dblp.org/db/conf/acm mm/index.html",
   "yearly_data": [
     {
+      "year": 2025,
+      "accepted": 1250,
+      "submitted": 5330
+    },
+    {
       "year": 2024,
       "accepted": 1150,
       "submitted": 4385
