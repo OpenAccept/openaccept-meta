@@ -1,15 +1,30 @@
-# Open Accept: Metadata
-Open Accept (OAc) is the place where you can find facts regarding paper acceptance rates in global Computer Science conferences.
-OAc's goal is to provide vital insights into the CS research community. Since acceptance rates and other important statistics are scattered all over the internet, community collaborations are of great importance in achiving this goal.
+# Open Accept Metadata - A Repository for CS Conference Acceptance Rates
 
-## Where I can find the data?
-- **Social media platforms**. Many researchers share their papers on social media platforms. They may also attach the notification email, which discloses the acceptance rate, in the post.
-- **Conference websites**. A lot of conferences choose to make acceptance rates public directly on their websites. (for instance, [CHI 2025 Paper Outcomes Report](https://chi2025.acm.org/chi-2025-papers-track-post-pc-outcomes-report/))
-- **Conference proceddings**. Conference proceedings may also disclose the acceptance rate. The most typical way is to mention the acceptance rate in "preface" or the "chairs note" section. (for example, [ICDE 2024 Proceddings, "A Message from the Chairs"](https://ieeexplore.ieee.org/document/10598037))
-- **On-site slides**. Chairs may also share the acceptance rate in the slides. This may requires in-person attendance. But in some cases, photos of the slides may be shared on social media.
+> To browse acceptance rates in a more interactive format, please visit the [Open Accept main site](https://openaccept.pages.dev/).
+
+Open Accept (OAc) is a collaborative platform for collecting and sharing metadata on paper acceptance rates at global computer science conferences. Our goal is to provide essential insights into the CS research community by aggregating publicly available statistics.
+
+As conference data is often scattered across web platforms and formats, community collaboration is vital to achieving comprehensive, accurate, and up-to-date records. OAc leverages this collaboration to build a centralized, open-source resource for researchers and academia.
+
+## Where can I find the data?
+- **Social media platforms**. Researchers frequently share acceptance emails or paper notifications on platforms like Twitter/X, LinkedIn, or Xiaohongshu (Red Note). Search for keywords such as "accepted" or "notification" alongside conference names.
+- **Conference websites**. Many venues publish detailed reports directly, such as the [CHI 2025 Paper Outcomes Report](https://chi2025.acm.org/chi-2025-papers-track-post-pc-outcomes-report/).
+- **Conference proceddings**. Acceptance rates are often mentioned in the "Preface" or "Chairs' Notes" sections of conference proceedings. For example, see [ICDE 2024 Proceddings, "A Message from the Chairs"](https://ieeexplore.ieee.org/document/10598037).
+- **On-site slides**. Chairs may present acceptance statistics during opening or closing sessions. Photos of these slides are sometimes shared on social media..
 
 ## How can I contribute?
-It's easy to contribute to OAc. Please fork the repository, make changes, and submit a pull request. Please make sure that your contribution comply with the data format. The general template is as follows:
+We welcome community-driven updates to the OAc repository. Follow these steps to contribute:
+
+1. Fork the Repository and make changes.
+2. Add a new JSON file (or edit an existing one) that follows the template.
+3. Submit a Pull Request with your edits, including clear data sources.
+4. The maintainers will review your PR; once approved, it will be merged.
+
+Please note that by contributing, you agree to OAc's [Terms of Use](https://openaccept.pages.dev/tou/).
+
+### Data format
+All conference entries must be valid JSON and adhere to one of the two templates below.
+#### Primary (single‑track) template
 ```json
 {
   "name": "Conference name abbreviation (e.g., AAAI)",
@@ -18,16 +33,16 @@ It's easy to contribute to OAc. Please fork the repository, make changes, and su
   "dblp": "DBLP URL",
   "yearly_data": [
     { "year": 2025, "submitted": 12957, "accepted": 3032 },
-    { "year": 2024, "submitted": 9862, "accepted": 2342 },
-    { "year": 2023, "submitted": 8777, "accepted": 1721 },
-    { "year": 2022, "submitted": 9020, "accepted": 1349 }
+    { "year": 2024, "submitted": 9862, "accepted": 2342 }
   ],
-  "sources":[
+  "sources": [
     "https://urls.here"
-  ]
+  ],
+  "remarks": "Any additional notes, optional"
 }
 ```
-If the conference has a secondary strack (currently, OAc only takes *short papers*, *ACL Findings*, and *KDD ADL* into statistics), please refer to the template below:
+#### Secondary‑track template
+If the conference has a secondary track (currently, OAc only takes *short papers*, *ACL Findings*, and *KDD ADL* into account), please refer to the following template.
 ```json
 {
   "name": "Conference name abbreviation (e.g., AAAI)",
@@ -36,24 +51,75 @@ If the conference has a secondary strack (currently, OAc only takes *short paper
   "dblp": "DBLP URL",
   "yearly_data": [
     { "year": 2025, "submitted": 12957, "accepted": 3032 },
-    { "year": 2024, "submitted": 9862, "accepted": 2342 },
-    { "year": 2023, "submitted": 8777, "accepted": 1721 },
-    { "year": 2022, "submitted": 9020, "accepted": 1349 }
+    { "year": 2024, "submitted": 9862, "accepted": 2342 }
   ],
   "second_track": "Findings",
   "second_track_yearly_data": [
     {"year": 2024, "accepted": 976, "submitted": 4407},
-    {"year": 2023, "accepted": 901, "submitted": 4864},
-    {"year": 2022, "accepted": 331, "submitted": 3378},
-    {"year": 2021, "accepted": 361, "submitted": 3350}
-  ]
-  "sources":[
+    {"year": 2023, "accepted": 901, "submitted": 4864}
+  ],
+  "sources": [
     "https://urls.here"
-  ]
+  ],
+  "remarks": "Any additional notes, optional"
 }
 ```
+| Field | Description | Required | Remarks |
+| --- | --- | --- | --- |
+| name | Conference abbreviation | Yes | In most cases, the abbr. should be unique, all caps. But there are exceptions, e.g., “RecSys” and “MobiSys”.|
+| full_name | Conference full name | Yes ||
+| website | Conference website | Yes | If the conference does not have a dedicated website, please use the latest year’s website.|
+| dblp | Conference DBLP URL | Yes | |
+| yearly_data | Array of yearly data | Yes | Each entry should include the year, submitted papers, and accepted papers. |
+| second_track | Secondary track name | No | If the conference has a secondary track, please specify the track name. |
+| second_track_yearly_data | Array of yearly data for the secondary track | No | Each entry should include the year, accepted papers, and submitted papers. |
+| sources | Array of data sources | No | Please include all data sources, if applicable. |
+| remarks | Additional notes | No | Any additional notes, optional. |
 
-## Policy on adding new conferences
-When adding a new conference, please make sure that the conference is listed in CCF's Recommended International Conferences and Journals Catalog or Core Ranking.
+## Add new conferences
+OAc primarily adoptes the taxonomy used in [CCF's Recommended International Conferences and Journals Catalog (written in Chinese)](https://www.ccf.org.cn/Academic_Evaluation/By_category/) to categorize conferences into 10 topics:
+<ul>
+    <li>
+        <b>AI</b>:
+        Artificial Intelligence</li>
+    <li>
+        <b>CHI</b>:
+        Computer-Human Interaction</li>
+    <li>
+        <b>DM</b>:
+        Database/Data Mining/Information Retrieval
+        </li>
+    <li>
+        <b>GM</b>:
+        Computer Graphics/Multimedia</li>
+    <li>
+        <b>NEW</b>:
+        New/Interdiscipline</li>
+    <li>
+        <b>NET</b>:
+        Computer Networks</li>
+    <li>
+        <b>SEC</b>:
+        Networks and Cybersecurity</li>
+    <li>
+        <b>SW</b>:
+        Software Engineering/System Softwares</li>
+    <li>
+        <b>SYS</b>:
+        Computer Systems/Architecture</li>
+    <li>
+        <b>TH</b>:
+        Computing Theory</li>
+</ul>
 
-Considering the audience reach and the difficulty of data maintenance, OAc primarily includes conferences listed in [CCF's Recommended International Conferences and Journals Catalog](https://www.ccf.org.cn/Academic_Evaluation/By_category/) and [Core Ranking](https://www.core.edu.au/conference-portal). You can add new conferences that are not listed in the above two lists, but the core maintainers may need more time to discuss and review your pull request. It is advised to contain a short justification in your pull request.
+In each category, conferences are classified into four tiers (A, B, C, and TBD) according to CCF's Catalog. [CORE Ranking](https://www.core.edu.au/conference-portal) is also used for reference.
+
+When you propose a conference that is not in either list (CCF's or CORE), please include a brief justification (e.g., “high‑impact venue in the emerging field of...”) in your PR description. Maintainers may need additional discussion time before merging.
+
+## Acknowledgements
+Some of the historical data in this repository was gathered from the following sources:
+- [Computer Science Conference Statistics](https://csconfstats.xoveexu.com/)
+- [Acceptance rates for the <del>major</del> top-tier AI-related conferences](https://github.com/lixin4ever/Conference-Acceptance-Rate)
+- [Paper Copilot](https://papercopilot.com/statistics/)
+
+We would like to thank the maintainers of these sources for their endless and valuable efforts to find and share such acceptance rates data.
