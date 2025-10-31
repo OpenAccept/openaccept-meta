@@ -5,6 +5,11 @@
   "dblp": "https://dblp.org/db/conf/acl/index.html",
   "yearly_data": [
     {
+      "year": 2025,
+      "accepted": 1699,
+      "submitted": 5501
+    },
+    {
       "year": 2024,
       "accepted": 943,
       "submitted": 4407
@@ -68,6 +73,11 @@
   "second_track": "Findings",
   "second_track_yearly_data": [
     {
+      "year": 2025,
+      "accepted": 1392,
+      "submitted": 5501
+    },
+    {
       "year": 2024,
       "accepted": 976,
       "submitted": 4407
@@ -87,5 +97,8 @@
       "accepted": 361,
       "submitted": 3350
     }
+  ],
+  "sources": [
+    "https://aclanthology.org/2025.acl-long.0.pdf"
   ]
 }
