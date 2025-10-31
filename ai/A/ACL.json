@@ -2,7 +2,7 @@
   "name": "ACL",
   "full_name": "Annual Meeting of the Association for Computational Linguistics",
   "website": "https://www.aclweb.org/portal/",
-  "DBLP": "https://dblp.org/db/conf/acl/index.html",
+  "dblp": "https://dblp.org/db/conf/acl/index.html",
   "yearly_data": [
     {
       "year": 2024,

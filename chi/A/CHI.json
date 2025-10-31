@@ -2,7 +2,7 @@
   "name": "CHI",
   "full_name": "ACM Conference on Human Factors in Computing Systems",
   "website": "https://archive.sigchi.org/conferences/conference-history/chi/",
-  "DBLP": "https://dblp.org/db/conf/chi/index.html",
+  "dblp": "https://dblp.org/db/conf/chi/index.html",
   "yearly_data": [
     {
       "year": 2025,

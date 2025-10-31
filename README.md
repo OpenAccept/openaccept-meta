@@ -10,7 +10,7 @@ As conference data is often scattered across web platforms and formats, communit
 - **Social media platforms**. Researchers frequently share acceptance emails or paper notifications on platforms like Twitter/X, LinkedIn, or Xiaohongshu (Red Note). Search for keywords such as "accepted" or "notification" alongside conference names.
 - **Conference websites**. Many venues publish detailed reports directly, such as the [CHI 2025 Paper Outcomes Report](https://chi2025.acm.org/chi-2025-papers-track-post-pc-outcomes-report/).
 - **Conference proceddings**. Acceptance rates are often mentioned in the "Preface" or "Chairs' Notes" sections of conference proceedings. For example, see [ICDE 2024 Proceddings, "A Message from the Chairs"](https://ieeexplore.ieee.org/document/10598037).
-- **On-site slides**. Chairs may present acceptance statistics during opening or closing sessions. Photos of these slides are sometimes shared on social media..
+- **On-site slides**. Chairs may present acceptance statistics during opening or closing sessions. Photos of these slides are sometimes shared on social media.
 
 ## How can I contribute?
 We welcome community-driven updates to the OAc repository. Follow these steps to contribute:

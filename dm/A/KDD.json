@@ -2,7 +2,7 @@
   "name": "KDD",
   "full_name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
   "website": "https://www.kdd.org",
-  "DBLP": "https://dblp.org/db/conf/kdd/index.html",
+  "dblp": "https://dblp.org/db/conf/kdd/index.html",
   "yearly_data": [
     {
       "year": 2025,

@@ -2,7 +2,7 @@
   "name": "COLT",
   "full_name": "Annual Conference on Computational Learning Theory.",
   "website": "https://www.learningtheory.org/",
-  "DBLP": "https://dblp.org/db/conf/colt/index.html",
+  "dblp": "https://dblp.org/db/conf/colt/index.html",
   "yearly_data": [
     {
       "year": 2024,
