@@ -5,6 +5,12 @@
   "dblp": "https://dblp.org/db/conf/sigmetrics/index.html",
   "yearly_data": [
     {
+      "year": 2025,
+      "accepted": 66,
+      "submitted": 382,
+      "source": "https://dl.acm.org/action/showFmPdf?doi=10.1145%2F3726854"
+    },
+    {
       "year": 2024,
       "accepted": 52,
       "submitted": 336

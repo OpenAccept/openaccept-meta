@@ -7,7 +7,8 @@
     {
       "year": 2025,
       "accepted": 1699,
-      "submitted": 5501
+      "submitted": 5501,
+      "source": "https://aclanthology.org/2025.acl-long.0.pdf"
     },
     {
       "year": 2024,
@@ -75,7 +76,8 @@
     {
       "year": 2025,
       "accepted": 1392,
-      "submitted": 5501
+      "submitted": 5501,
+      "source": "https://aclanthology.org/2025.acl-long.0.pdf"
     },
     {
       "year": 2024,
@@ -97,8 +99,5 @@
       "accepted": 361,
       "submitted": 3350
     }
-  ],
-  "sources": [
-    "https://aclanthology.org/2025.acl-long.0.pdf"
   ]
 }

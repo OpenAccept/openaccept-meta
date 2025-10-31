@@ -7,12 +7,14 @@
     {
       "year": 2025,
       "accepted": 1249,
-      "submitted": 5020
+      "submitted": 5020,
+      "source": "https://chi2025.acm.org/chi-2025-papers-track-post-pc-outcomes-report/"
     },
     {
       "year": 2024,
       "accepted": 1060,
-      "submitted": 4046
+      "submitted": 4046,
+      "source": "https://chi2024.acm.org/2024/01/29/chi-2024-papers-track-post-pc-outcomes-report/"
     },
     {
       "year": 2023,
@@ -60,9 +62,5 @@
       "submitted": 1520
     }
   ],
-  "second_track": null,
-  "sources": [
-    "https://chi2025.acm.org/chi-2025-papers-track-post-pc-outcomes-report/",
-    "https://chi2024.acm.org/2024/01/29/chi-2024-papers-track-post-pc-outcomes-report/"
-  ]
+  "second_track": null
 }

@@ -5,18 +5,23 @@
   "dblp": "https://dblp.org/db/conf/siggraph/index.html",
   "yearly_data": [
     {
+      "year": 2025,
+      "accepted": 174,
+      "submitted": 771
+    },
+    {
       "year": 2024,
       "accepted": 134,
-      "submitted": 652
+      "submitted": 654
     },
     {
       "year": 2023,
-      "accepted": 111,
+      "accepted": 86,
       "submitted": 371
     },
     {
       "year": 2022,
-      "accepted": 78,
+      "accepted": 61,
       "submitted": 353
     },
     {
@@ -65,22 +70,31 @@
       "submitted": 480
     }
   ],
-  "second_track": "Journal-only Track",
+  "second_track": "Journal Track",
   "second_track_yearly_data": [
+    {
+      "year": 2025,
+      "accepted": 132,
+      "submitted": 972
+    },
     {
       "year": 2024,
       "accepted": 118,
-      "submitted": 192
+      "submitted": 846
     },
     {
       "year": 2023,
-      "accepted": 103,
-      "submitted": 240
+      "accepted": 126,
+      "submitted": 611
     },
     {
       "year": 2022,
-      "accepted": 116,
-      "submitted": 257
+      "accepted": 133,
+      "submitted": 610
     }
+  ],
+  "remarks": "From 2022 onwards, SIGGRAPH adopts a two-track model: papers submitted to the journal-only track will only be considered for publication in the journal, while those submitted to the dual-track will also be considered for publication in the conference proceedings. On this page, '# submitted' in the [Main Research Track] represents # of papers submitted to the dual-track. '# submitted' in the [Journal Track] represents two-track total submissions.",
+  "sources": [
+    "https://www.kesen.realtimerendering.com/"
   ]
 }

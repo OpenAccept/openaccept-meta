@@ -50,18 +50,18 @@ If the conference has a secondary track (currently, OAc only takes *short papers
   "website": "Website URL",
   "dblp": "DBLP URL",
   "yearly_data": [
-    { "year": 2025, "submitted": 12957, "accepted": 3032 },
-    { "year": 2024, "submitted": 9862, "accepted": 2342 }
+    { "year": 2025, "submitted": 12957, "accepted": 3032, "source": "https://url.here" },
+    { "year": 2024, "submitted": 9862, "accepted": 2342, "source": "https://url.here" }
   ],
   "second_track": "Findings",
   "second_track_yearly_data": [
-    {"year": 2024, "accepted": 976, "submitted": 4407},
-    {"year": 2023, "accepted": 901, "submitted": 4864}
+    {"year": 2024, "accepted": 976, "submitted": 4407, "source": "https://url.here"},
+    {"year": 2023, "accepted": 901, "submitted": 4864, "source": "https://url.here"}
   ],
+  "remarks": "Any additional notes, optional",
   "sources": [
     "https://urls.here"
-  ],
-  "remarks": "Any additional notes, optional"
+  ]
 }
 ```
 | Field | Description | Required | Remarks |
@@ -70,11 +70,16 @@ If the conference has a secondary track (currently, OAc only takes *short papers
 | full_name | Conference full name | Yes ||
 | website | Conference website | Yes | If the conference does not have a dedicated website, please use the latest year’s website.|
 | dblp | Conference DBLP URL | Yes | |
-| yearly_data | Array of yearly data | Yes | Each entry should include the year, submitted papers, and accepted papers. |
-| second_track | Secondary track name | No | If the conference has a secondary track, please specify the track name. |
-| second_track_yearly_data | Array of yearly data for the secondary track | No | Each entry should include the year, accepted papers, and submitted papers. |
-| sources | Array of data sources | No | Please include all data sources, if applicable. |
-| remarks | Additional notes | No | Any additional notes, optional. |
+| yearly_data | Array of yearly data | Yes | Each entry should include the year, # of submitted papers, # of accepted papers, and data source<sup>[1]</sup>. |
+| second_track | Secondary track name | Depends<sup>[2]</sup> | If the conference has a secondary track, please specify the track name. |
+| second_track_yearly_data | Array of yearly data for the secondary track | Depends<sup>[2]</sup> | Each entry should include the year, # of submitted papers, # of accepted papers, and data source<sup>[1]</sup>. |
+|remarks | Additional notes | No | Any additional notes, optional. |
+| sources | Array of data sources | No | Where data can be acquired in bulk. For instance, someone's blog that keeps track of acceptance rates over the past few years. |
+
+> [!NOTE]
+> - [1]: Data source is optional. However, we strongly recommend including the data source for each entry. If it's a picture, please upload to image hosting services such as [Imgur](https://imgur.com/), and [Imgchr](https://imgchr.com/).
+> - [2]: Only required when there is a secondary track.
+
 
 ## Add new conferences
 OAc primarily adoptes the taxonomy used in [CCF's Recommended International Conferences and Journals Catalog (written in Chinese)](https://www.ccf.org.cn/Academic_Evaluation/By_category/) to categorize conferences into 10 topics:
