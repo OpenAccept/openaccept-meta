@@ -5,6 +5,12 @@
   "dblp": "https://dblp.org/db/conf/emnlp/index.html",
   "yearly_data": [
     {
+      "year": 2025,
+      "accepted": 1811,
+      "submitted": 8174,
+      "source": "http://xhslink.com/o/2LEAqHEpyoe"
+    },
+    {
       "year": 2024,
       "accepted": 1271,
       "submitted": 6105
@@ -68,6 +74,12 @@
   "second_track": "Findings",
   "second_track_yearly_data": [
     {
+      "year": 2025,
+      "accepted": 1418,
+      "submitted": 8174,
+      "source": "http://xhslink.com/o/2LEAqHEpyoe"
+    },
+    {
       "year": 2024,
       "accepted": 1029,
       "submitted": 6105
@@ -92,5 +104,6 @@
       "accepted": 447,
       "submitted": 3359
     }
-  ]
+  ],
+  "remarks": "In *ACL venues, #submitted represents the # of original submissions to the ARR, rather than the # of commitments to the specific venue."
 }

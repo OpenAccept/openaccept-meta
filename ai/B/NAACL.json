@@ -5,6 +5,12 @@
   "dblp": "https://dblp.org/db/conf/naacl/index.html",
   "yearly_data": [
     {
+      "year": 2025,
+      "accepted": 719,
+      "submitted": 3185,
+      "source": "https://aclanthology.org/2025.naacl-long.0.pdf"
+    },
+    {
       "year": 2024,
       "accepted": 565,
       "submitted": 2434
@@ -48,6 +54,12 @@
   "second_track": "Findings",
   "second_track_yearly_data": [
     {
+      "year": 2025,
+      "accepted": 477,
+      "submitted": 3185,
+      "source": "https://aclanthology.org/2025.naacl-long.0.pdf"
+    },
+    {
       "year": 2024,
       "accepted": 304,
       "submitted": 2434
@@ -57,5 +69,6 @@
       "accepted": 209,
       "submitted": 2103
     }
-  ]
+  ],
+  "remarks": "NAACL is only held in Northern America. NAACL will be skipped when ACL is held in Northern America. In *ACL venues, #submitted represents the # of original submissions to the ARR, rather than the # of commitments to the specific venue."
 }

@@ -7,7 +7,7 @@
     {
       "year": 2025,
       "accepted": 1699,
-      "submitted": 5501,
+      "submitted": 8360,
       "source": "https://aclanthology.org/2025.acl-long.0.pdf"
     },
     {
@@ -76,7 +76,7 @@
     {
       "year": 2025,
       "accepted": 1392,
-      "submitted": 5501,
+      "submitted": 8360,
       "source": "https://aclanthology.org/2025.acl-long.0.pdf"
     },
     {
@@ -99,5 +99,6 @@
       "accepted": 361,
       "submitted": 3350
     }
-  ]
+  ],
+  "remarks": "In *ACL venues, #submitted represents the # of original submissions to the ARR, rather than the # of commitments to the specific venue."
 }
